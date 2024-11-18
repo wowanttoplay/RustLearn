@@ -14,6 +14,9 @@ fn main() {
     }; // The curly brackets is an expression, so x + 1 is not end with semicolon. let y = {} is a statement
 
     println!("y is {}", y);
+
+    println!("five() = {}", five());
+    println!("six() = {}", six());
 }
 
 fn another_function() {
@@ -27,4 +30,12 @@ fn another_function2(x: i32) {
 fn print_labeled_measurement(value: i32, unit_label: char) {
     println!("The measurement is: {}{}", value, unit_label);
     println!("The measurement is {value}{unit_label}");
+}
+
+fn five() -> i32 {
+    5
+}
+
+fn six() -> i32 {
+    return 6;
 }
